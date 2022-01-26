@@ -1,0 +1,137 @@
+/* @import 'https://fonts.google.com/specimen/Rubik'; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 10px
+}
+
+form {
+    background-image: url(../images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 28rem;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2.8rem;
+    padding: 3.3rem 0;
+}
+
+.search {
+    display: flex;
+    height: 5.5rem;
+    justify-content: center
+}
+
+input {
+    width: 43.7rem;
+    font-size: 1.7rem;
+    padding-left: 1.5rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border: none;
+    -webkit-border-radius: 1.5rem 0 0 1.5rem;
+    -moz-border-radius: 1.5rem 0 0 1.5rem;
+    -ms-border-radius: 1.5rem 0 0 1.5rem;
+    -o-border-radius: 1.5rem 0 0 1.5rem;
+}
+
+::placeholder {
+    color: rgb(155, 155, 155);
+    font-size: 1.7rem
+}
+
+button {
+    padding: 0 2rem;
+    background: black;
+    border-radius: 0 1.5rem 1.5rem 0;
+    border: none;
+    -webkit-border-radius: 0 1.5rem 1.5rem 0;
+    -moz-border-radius: 0 1.5rem 1.5rem 0;
+    -ms-border-radius: 0 1.5rem 1.5rem 0;
+    -o-border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.search-result {
+    position: relative;
+    transform: translateY(-8rem);
+    width: 100%;
+    z-index: 999;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    text-align: initial;
+    background: #fff;
+    width: 76%;
+    margin: auto;
+    border-radius: 1.5rem;
+}
+
+li {
+    color: #464646;
+    position: relative;
+    text-transform: capitalize;
+    padding: 0 3.5rem;
+    margin: 3.7rem 0;
+    width: 25%;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+li p {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-weight: 800;
+    letter-spacing: .1rem;
+    color: #acaeaf;
+    margin-bottom: 1.5rem;
+}
+
+li:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    width: .1rem;
+    height: 7.5rem;
+    background: #e3e3e3;
+    right: 0;
+    top: 0;
+    transform: translateY(.8rem);
+    -webkit-transform: translateY(.8rem);
+    -moz-transform: translateY(.8rem);
+    -ms-transform: translateY(.8rem);
+    -o-transform: translateY(.8rem);
+}
+
+#map {
+    height: 48rem;
+    width: 100%;
+}
+
+@media(max-width:375px) {
+    .search {
+        width: 84%;
+        margin: auto;
+    }
+     ::placeholder {
+        font-size: 1.4rem
+    }
+    ul {
+        flex-direction: column;
+        width: 84%;
+        text-align: center
+    }
+    ul li {
+        width: 100%;
+        margin: 3.7rem 0 0;
+    }
+}
