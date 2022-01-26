@@ -17,13 +17,16 @@
 </head>
 
 <body>
+    <header>
     <form id="iPAddress">
         <h1>ip address tracker</h1>
         <div class="search">
             <input type="text" placeholder="Search for any IP address or domain">
-            <button type="submit"><img src="images/icon-arrow.svg" alt="" ></button>
+            <button type="submit" tittle="search"><img src="images/icon-arrow.svg" alt="search" ></button>
         </div>
     </form>
+        </header>
+            <main>
     <div class="search-result">
         <ul>
             <li>
@@ -44,8 +47,10 @@
             </li>
         </ul>
     </div>
+                </main>
+    <footer>
     <div id="map"> </div>
-
+</footer>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <script src="js/leaflet.js"></script>
     <script src="js/script.js"></script>
